@@ -17,7 +17,7 @@ export default {
 #app {
 height: 100vh;
 }
-html,body{
+html,body,p{
   margin: 0;
   padding: 0;
 }
