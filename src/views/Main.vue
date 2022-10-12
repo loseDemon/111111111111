@@ -2,12 +2,12 @@
   <div>
     <el-container>
       <!-- 侧边栏 -->
-      <el-aside width="200px"><common-aside /></el-aside>
+      <el-aside width="auto"><common-aside /></el-aside>
       <el-container>
         <!-- 顶部区域 -->
         <el-header><common-header /></el-header>
         <!-- 主体内容区域 -->
-        <el-main><router-view></router-view>></el-main>
+        <el-main><router-view></router-view></el-main>
       </el-container>
     </el-container>
   </div>
@@ -16,6 +16,7 @@
 <script>
 import CommonAside from '../../src/components/CommonAside.vue';
 import CommonHeader from '../../src/components/CommonHeader.vue';
+import '../api/mock'
 export default {
   components:{
     CommonAside,
