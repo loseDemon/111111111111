@@ -121,7 +121,7 @@ export default {
     getData().then(({ data }) => {
       // 获取后端返回的Data数据
       const { orderData, tableData, videoData, userData } = data.data;
-      console.log(data.data);
+      // console.log(data.data);
       // 赋值给本地的tableData数据
       this.tableData = tableData;
 

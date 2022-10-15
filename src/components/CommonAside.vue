@@ -97,6 +97,8 @@ export default {
         !(this.$route.path === "/home" && item.path === "/")
       ) {
         this.$router.push(item.path);
+        // 跨页面通信，将点击的当前这个菜单的信息，传递给store里边的方法；第一个参数是传递到moutations的方法，第二个参数，传递的数据
+        this.$store.commit('SelectMenu',item)
       }
     },
   },

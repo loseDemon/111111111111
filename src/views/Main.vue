@@ -6,6 +6,8 @@
       <el-container>
         <!-- 顶部区域 -->
         <el-header><common-header /></el-header>
+        <!-- 面包屑 -->
+        <common-tag />
         <!-- 主体内容区域 -->
         <el-main><router-view></router-view></el-main>
       </el-container>
@@ -16,11 +18,15 @@
 <script>
 import CommonAside from '../../src/components/CommonAside.vue';
 import CommonHeader from '../../src/components/CommonHeader.vue';
+import CommonTag from '../../src/components/CommonTag.vue';
+
+
 import '../api/mock'
 export default {
   components:{
     CommonAside,
-    CommonHeader
+    CommonHeader,
+    CommonTag
   },
   data() {
     return {}
